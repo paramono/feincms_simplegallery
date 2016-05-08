@@ -1,0 +1,38 @@
+{% load applicationcontent_tags feincms_tags feincms_page_tags %}
+{% load staticfiles settings_value %}
+{% load feincms_thumbnail %}
+
+<div class="row row-height" id="lightbox_container_{{container_id}}" >
+		{% for element in elements %}
+		{% with thumb=element.mediafile.file|thumbnail:"250x250" %}
+		<div class="col-xs-12 col-sm-6 col-md-4 center phantom-break">
+			<div class="same-height center">
+				<div class="same-height-thumb">
+					<span class="image-helper"></span>
+					{% if element.url %}
+					<a href="{{element.url}}">
+						<img class="img-responsive inline-block partner-image" src="{{thumb}}">
+					</a>
+					{% else %}
+					<img class="img-responsive inline-block partner-image" src="{{thumb}}">
+					{% endif %}
+				</div>
+
+				{% if element.url %}
+				<h5><a href="{{element.url}}">{{element.title|safe}}</a></h5>
+				{% else %}
+				<h5>{{element.title|safe}}</h5>
+				{% endif %}
+
+				{% if element.subtitle %}
+				<p>{{element.subtitle|safe}}</p>
+				{% endif %}
+
+				{% if element.description %}
+				<p>{{element.description|safe}}</p>
+				{% endif %}
+			</div>
+		</div>
+		{% endwith %}
+		{% endfor %}
+</div>

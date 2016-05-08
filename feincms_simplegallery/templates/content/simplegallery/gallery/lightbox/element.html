@@ -1,0 +1,16 @@
+{% load feincms_thumbnail %}
+
+{% with image=element.mediafile.file|thumbnail:"99999x533" %}
+<div>
+  {% if element.url %}
+  <a href="{{element.url}}">
+    <img u="image" src="{{ image.url }}" />
+  </a>
+  {% else %}
+    <img u="image" src="{{ image.url }}" />
+  {% endif %}
+</div>
+{% endwith %}
+<!-- class="car-img img-responsive center-block" --> 
+
+

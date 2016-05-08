@@ -1,0 +1,92 @@
+# feincms_simplegallery
+# Simple implementation of gallery for feincms
+
+# Copyright (C) 2016 Alexander Paramonov
+# This file is distributed under the same license as the feincms_simplegallery package.
+# Alexander Paramonov <alex@paramono.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-02 18:20+0300\n"
+"PO-Revision-Date: 2016-04-02 18:20+0300\n"
+"Last-Translator: Alexander Paramonov <alex@paramono.com>\n"
+"Language-Team: Russian <https://github.com/paramono/feincms_simplegallery>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: models.py:21 models.py:82 models.py:83
+msgid "Simple Gallery"
+msgstr "Простая галерея"
+
+#: models.py:22
+msgid "Simple Galleries"
+msgstr "Простые галереи"
+
+#: models.py:29
+msgid "Gallery"
+msgstr "Галерея"
+
+#: models.py:38
+msgid "Image"
+msgstr "Изображение"
+
+#: models.py:46
+msgid "Gallery Element"
+msgstr "Элемент галереи"
+
+#: models.py:47
+msgid "Gallery Elements"
+msgstr "Элементы галереи"
+
+#: models.py:53
+msgid "Link to Gallery"
+msgstr "Ссылка на галерею"
+
+#: util/base.py:22 util/base.py:53
+msgid "Title"
+msgstr "Заголовок"
+
+#: util/base.py:30
+msgid "Base Container"
+msgstr "Базовый контейнер"
+
+#: util/base.py:31
+msgid "Base Containers"
+msgstr "Базовые контейнеры"
+
+#: util/base.py:59
+msgid "Subtitle"
+msgstr "Подзаголовок"
+
+#: util/base.py:65
+msgid "Description"
+msgstr "Описание"
+
+#: util/base.py:70
+msgid "URL"
+msgstr "URL"
+
+#: util/base.py:79
+msgid "Base Element"
+msgstr "Базовый элемент"
+
+#: util/base.py:80
+msgid "Base Elements"
+msgstr "Базовые элементы"
+
+#: util/base.py:106 util/base.py:107 util/base.py:110
+msgid "Base Content"
+msgstr "Базовый контент"
+
+#: util/base.py:130
+msgid "type"
+msgstr "тип"
+
+#: util/mixins.py:6
+msgid "Order"
+msgstr "Очерёдность"

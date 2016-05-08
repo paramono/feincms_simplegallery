@@ -1,0 +1,15 @@
+{% load applicationcontent_tags feincms_tags feincms_page_tags %}
+{% load staticfiles settings_value %}
+{% load feincms_thumbnail %}
+
+<div class="row" id="lightbox_container_{{container_id}}" data-featherlight-gallery data-featherlight-filter="a">
+	{% for element in elements %}
+		{% with image=element.mediafile.file|thumbnail:"1000x1000" thumb=element.mediafile.file|thumbnail:"99999x200" %}
+		<div class="col-xs-6 col-md-3" style="text-align: center;">
+			<a href="{{image.url}}">
+				<img class="thumbnail img-responsive" src="{{ thumb.url }}" />
+			</a>
+		</div>
+		{% endwith %}
+	{% endfor %}
+</div>
