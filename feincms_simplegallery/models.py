@@ -40,7 +40,6 @@ class GalleryContainer(OrderableMixin):
             context_instance=kwargs.get('context'))
 
     class Meta:
-        abstract = True
         ordering = ['_order', 'title']
         verbose_name = _('Simple Gallery')
         verbose_name_plural = _('Simple Galleries')
