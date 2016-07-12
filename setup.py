@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -11,10 +11,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='feincms_simplegallery',
-    version='0.1.0',
-    packages=['feincms_simpletable'],
+    version='0.1.6',
+    packages=find_packages(exclude=[
+        'tests',
+    ]),
     include_package_data=True,
-    license='BSD License',  
+    license='BSD License',
     description='simple implementation of gallery for feincms',
     long_description=README,
     url='https://github.com/paramono/feincms_simplegallery',
@@ -24,7 +26,7 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License', # example license
+        'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',

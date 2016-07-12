@@ -1,8 +1,8 @@
-===================
-feincms_simpletable
-===================
+=====================
+feincms_simplegallery
+=====================
 
-feincms_simpletable is a simple implementation of gallery for feincms
+feincms_simplegallery is a simple implementation of gallery for feincms
 
 Quick start
 -----------
@@ -22,7 +22,7 @@ Quick start
     Page.create_content_type(GalleryContent)
 
 3. (optional) It is possible to define TYPE_CHOICES for GalleryContent if you want to 
-   render tables using different templates::
+   render galleries using different templates::
 
     from feincms_simplegallery.models import GalleryContent
     # ...
@@ -33,9 +33,9 @@ Quick start
         )
     )
     
-    # tables will be rendered as either of these, depending on admin choice:
-    # templates/content/feincms_simpletable/default.html
-    # templates/content/feincms_simpletable/other.html
+    # galleries will be rendered as either of these, depending on admin choice:
+    # templates/content/feincms_simplegallery/default.html
+    # templates/content/feincms_simplegallery/other.html
     # ...
 
     Some of the templates (grid and lightbox) are bundled with the plugin

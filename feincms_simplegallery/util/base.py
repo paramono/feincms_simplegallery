@@ -34,9 +34,9 @@ class BaseContainer(OrderableMixin):
         # return
         return render_to_string(
             # 'content/containers/%s/container.html' % self.type,
-            'content/simplegallery/container.html',
+            'content/simplegallery/gallery/default/container.html',
             {
-                'elems': self.container_elements.all(), 
+                'elements': self.container_elements.all(), 
                 'container_title': self.title,
                 'container_id': id(self)
             },
