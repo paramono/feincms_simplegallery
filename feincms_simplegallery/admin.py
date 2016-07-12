@@ -23,7 +23,7 @@ class BaseContainerAdmin(admin.ModelAdmin):
 
 class GalleryElementAdmin(BaseElementAdmin):
     model = GalleryElement
-    raw_id_fields = ('mediafile',)
+    raw_id_fields = ('mediafile', 'page')
 
 
 @admin.register(GalleryContainer)

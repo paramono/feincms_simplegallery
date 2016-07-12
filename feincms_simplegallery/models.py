@@ -103,6 +103,13 @@ class GalleryElement(OrderableMixin, models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        if self.page:
+            url = self.page.get_absolute_url()
+        else:
+            url = self.url
+        return url
+
     def render(self, **kwargs):
         return render_to_string(
             'content/containers/%s/elem.html' %
