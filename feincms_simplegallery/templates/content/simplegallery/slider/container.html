@@ -1,0 +1,36 @@
+{% load feincms_thumbnail %}
+
+<div class="content-wrapper">
+<div class="container">
+	<div class="row row-height">
+		<div class="col-xs-12">
+			<div id="slick-slider-{{container_id}}" class="slick slick-slider">
+			{% for element in elements %}
+			{% with image=element.mediafile.file|thumbnail:"99999x600" %}
+				<div class="">
+				{% if element.get_absolute_url %}
+					<a href="{{element.get_absolute_url}}" target="blank">
+						<img class="img-responsive inline-block-important partner-image" 
+							src="{{image}}">
+					</a>
+				{% else %}
+					<img class="img-responsive inline-block-important partner-image" 
+						src="{{image}}">
+				{% endif %}
+				</div>
+			{% endwith %}
+			{% endfor %}
+			</div>
+		</div>
+		<div class="clearfix"></div> {# same level with col-*-* #}
+	</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+		$('#slick-slider-{{container_id}}').slick(
+		{{container.to_json|safe}}
+	);
+});
+</script>

@@ -1,0 +1,67 @@
+{% load feincms_thumbnail %}
+
+<div class="_content-wrapper">
+<div class="row row-height">
+	<div class="col-xs-12 col-xs-offset-0 col-md-8 col-md-offset-2">
+		<div class="slick slick-slider">
+		{% for element in elements %}
+		{% with image=element.mediafile.file|thumbnail:"99999x600" %}
+				<!-- <div class="card same-height center" style="margin-left: 10px; margin-right:10px;"> -->
+				<!-- 	<div class="partner-image-container"> -->
+						<!-- <span class="image-helper"></span> -->
+						<div class="">
+						{% if element.get_absolute_url %}
+							<a href="{{element.get_absolute_url}}" target="blank">
+								<img class="img-responsive inline-block-important partner-image" 
+									src="{{image}}">
+							</a>
+						{% else %}
+							<img class="img-responsive inline-block-important partner-image" 
+								src="{{image}}">
+						{% endif %}
+						</div>
+					<!-- </div> -->
+				<!-- </div> -->
+		{% endwith %}
+		{% endfor %}
+		</div>
+	</div>
+	<div class="clearfix"></div> {# same level with col-*-* #}
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+	$('.slick-slider').slick({
+		dots: true,
+		infinite: true,
+		autoplay: true,
+		adaptiveHeight: true,
+
+		speed: 600,
+		autoplaySpeed: 5000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+
+		// autoplaySpeed: 5000*10000,
+		lazyLoad: 'ondemand',
+		// responsive: [
+		// 	{
+		// 		breakpoint: 992,
+		// 		settings: {
+		// 			slidesToShow: 2,
+		// 			slidesToScroll: 1,
+		// 			infinite: true,
+		// 		}
+		// 	},
+		// 	{
+		// 		breakpoint: 768,
+		// 		settings: {
+		// 			slidesToShow: 1,
+		// 			slidesToScroll: 1
+		// 		}
+		// 	},
+		// ]
+	});
+});
+</script>

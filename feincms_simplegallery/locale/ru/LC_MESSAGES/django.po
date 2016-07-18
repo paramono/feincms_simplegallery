@@ -5,9 +5,9 @@
 # Alexander Paramonov <alex@paramono.com>, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1.6\n"
+"Project-Id-Version: 0.1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-12 19:19+0300\n"
+"POT-Creation-Date: 2016-07-17 00:40+0300\n"
 "PO-Revision-Date: 2016-04-02 18:20+0300\n"
 "Last-Translator: Alexander Paramonov <alex@paramono.com>\n"
 "Language-Team: Russian <https://github.com/paramono/feincms_simplegallery>\n"
@@ -18,65 +18,127 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: apps.py:7 models.py:45 models.py:192 models.py:193
+#: apps.py:7 content_types/base_gallery.py:86 content_types/base_gallery.py:87
+#: models.py:39
 msgid "Simple Gallery"
 msgstr "Простая галерея"
 
-#: models.py:25 models.py:54 util/base.py:22 util/base.py:53
-msgid "Title"
-msgstr "Заголовок"
-
-#: models.py:46
-msgid "Simple Galleries"
-msgstr "Простые галереи"
-
-#: models.py:60 util/base.py:59
-msgid "Subtitle"
-msgstr "Подзаголовок"
-
-#: models.py:66
-msgid "alt attribute"
-msgstr "аттрибут alt"
-
-#: models.py:71 util/base.py:65
-msgid "Description"
-msgstr "Описание"
-
-#: models.py:77
-msgid "Page"
-msgstr "Страница"
-
-#: models.py:82 util/base.py:70
-msgid "URL"
-msgstr "URL"
-
-#: models.py:89
-msgid "Gallery"
-msgstr "Галерея"
-
-#: models.py:98
-msgid "Image"
-msgstr "Изображение"
-
-#: models.py:119
-msgid "Gallery Element"
-msgstr "Элемент галереи"
-
-#: models.py:120
-msgid "Gallery Elements"
-msgstr "Элементы галереи"
-
-#: models.py:133
+#: content_types/base_gallery.py:22
 msgid "Link to Gallery"
 msgstr "Ссылка на галерею"
 
-#: models.py:140 util/base.py:106 util/base.py:107 util/base.py:110
-msgid "Base Content"
-msgstr "Базовый контент"
+#: content_types/base_gallery.py:29
+msgid "Gallery Content"
+msgstr "Галерея"
 
-#: models.py:154 util/base.py:130
+#: content_types/base_gallery.py:38 util/base.py:130
 msgid "type"
 msgstr "тип"
+
+#: content_types/slider.py:17
+msgid "On Demand"
+msgstr "По мере надобности"
+
+#: content_types/slider.py:18
+msgid "Progressive"
+msgstr "Наперёд"
+
+#: content_types/slider.py:23
+msgid "Navigation dots"
+msgstr "Навигационные буллеты"
+
+#: content_types/slider.py:27
+msgid "Infinite"
+msgstr "Зациклить"
+
+#: content_types/slider.py:28
+msgid "Shows first slide after the last one and vice versa"
+msgstr "Показывает первый слайд после последнего и наоборот"
+
+#: content_types/slider.py:32
+msgid "Autoplay"
+msgstr "Автопролистывание"
+
+#: content_types/slider.py:36
+msgid "Adaptive Height"
+msgstr "Адаптивная высота"
+
+#: content_types/slider.py:37
+msgid "Adapts slider height to the current slide"
+msgstr "Подгоняет высоту слайдера под высоту текущего слайда"
+
+#: content_types/slider.py:42
+msgid "Transition speed between slides"
+msgstr "Скорость перехода между слайдами"
+
+#: content_types/slider.py:46
+msgid "Autoplay change interval"
+msgstr "Интервал смены слайдов при автопролистывании"
+
+#: content_types/slider.py:50
+msgid "Number of slides to show at a time"
+msgstr "Количество одновременно показываемых слайдов"
+
+#: content_types/slider.py:54
+msgid "Number of slides to scroll at a time"
+msgstr "Количество одновременно пролистываемых слайдов"
+
+#: content_types/slider.py:61
+msgid "Lazy Load"
+msgstr "Ленивая загрузка"
+
+#: content_types/slider.py:62
+msgid "Load images only when needed"
+msgstr "Подгружать изображения только по мере надобности"
+
+#: content_types/slider.py:66 content_types/slider.py:85
+#: content_types/slider.py:86
+msgid "Slider"
+msgstr "Слайдер"
+
+#: models.py:20 models.py:48 util/base.py:22 util/base.py:53
+msgid "Title"
+msgstr "Заголовок"
+
+#: models.py:40
+msgid "Simple Galleries"
+msgstr "Простые галереи"
+
+#: models.py:54 util/base.py:59
+msgid "Subtitle"
+msgstr "Подзаголовок"
+
+#: models.py:60
+msgid "alt attribute"
+msgstr "аттрибут alt"
+
+#: models.py:65 util/base.py:65
+msgid "Description"
+msgstr "Описание"
+
+#: models.py:71
+msgid "Page"
+msgstr "Страница"
+
+#: models.py:76 util/base.py:70
+msgid "URL"
+msgstr "URL"
+
+#: models.py:83
+msgid "Gallery"
+msgstr "Галерея"
+
+#: models.py:92
+msgid "Image"
+msgstr "Изображение"
+
+#: models.py:120
+msgid "Gallery Element"
+msgstr "Элемент галереи"
+
+#: models.py:121
+msgid "Gallery Elements"
+msgstr "Элементы галереи"
 
 #: util/base.py:30
 msgid "Base Container"
@@ -93,6 +155,10 @@ msgstr "Базовый элемент"
 #: util/base.py:80
 msgid "Base Elements"
 msgstr "Базовые элементы"
+
+#: util/base.py:106 util/base.py:107 util/base.py:110
+msgid "Base Content"
+msgstr "Базовый контент"
 
 #: util/mixins.py:6
 msgid "Order"
