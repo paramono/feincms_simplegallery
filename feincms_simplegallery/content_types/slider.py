@@ -18,6 +18,11 @@ class SliderContent(GalleryContent):
         (LAZY_LOAD_PROGRESSIVE, _('Progressive'),),
     )
 
+    hidden_xs = models.BooleanField(
+        default=True,
+        verbose_name=_('Hide on small screens?'),
+    )
+
     dots = models.BooleanField(
         default=True,
         verbose_name=_('Navigation dots'),
