@@ -5,9 +5,9 @@
 # Alexander Paramonov <alex@paramono.com>, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1.7\n"
+"Project-Id-Version: 0.1.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 00:40+0300\n"
+"POT-Creation-Date: 2016-07-19 16:21+0300\n"
 "PO-Revision-Date: 2016-04-02 18:20+0300\n"
 "Last-Translator: Alexander Paramonov <alex@paramono.com>\n"
 "Language-Team: Russian <https://github.com/paramono/feincms_simplegallery>\n"
@@ -44,55 +44,59 @@ msgid "Progressive"
 msgstr "Наперёд"
 
 #: content_types/slider.py:23
+msgid "Hide on small screens?"
+msgstr "Прятать на малых экранах?"
+
+#: content_types/slider.py:28
 msgid "Navigation dots"
 msgstr "Навигационные буллеты"
 
-#: content_types/slider.py:27
+#: content_types/slider.py:32
 msgid "Infinite"
 msgstr "Зациклить"
 
-#: content_types/slider.py:28
+#: content_types/slider.py:33
 msgid "Shows first slide after the last one and vice versa"
 msgstr "Показывает первый слайд после последнего и наоборот"
 
-#: content_types/slider.py:32
+#: content_types/slider.py:37
 msgid "Autoplay"
 msgstr "Автопролистывание"
 
-#: content_types/slider.py:36
+#: content_types/slider.py:41
 msgid "Adaptive Height"
 msgstr "Адаптивная высота"
 
-#: content_types/slider.py:37
+#: content_types/slider.py:42
 msgid "Adapts slider height to the current slide"
 msgstr "Подгоняет высоту слайдера под высоту текущего слайда"
 
-#: content_types/slider.py:42
+#: content_types/slider.py:47
 msgid "Transition speed between slides"
 msgstr "Скорость перехода между слайдами"
 
-#: content_types/slider.py:46
+#: content_types/slider.py:51
 msgid "Autoplay change interval"
 msgstr "Интервал смены слайдов при автопролистывании"
 
-#: content_types/slider.py:50
+#: content_types/slider.py:55
 msgid "Number of slides to show at a time"
 msgstr "Количество одновременно показываемых слайдов"
 
-#: content_types/slider.py:54
+#: content_types/slider.py:59
 msgid "Number of slides to scroll at a time"
 msgstr "Количество одновременно пролистываемых слайдов"
 
-#: content_types/slider.py:61
+#: content_types/slider.py:66
 msgid "Lazy Load"
 msgstr "Ленивая загрузка"
 
-#: content_types/slider.py:62
+#: content_types/slider.py:67
 msgid "Load images only when needed"
 msgstr "Подгружать изображения только по мере надобности"
 
-#: content_types/slider.py:66 content_types/slider.py:85
-#: content_types/slider.py:86
+#: content_types/slider.py:71 content_types/slider.py:90
+#: content_types/slider.py:91
 msgid "Slider"
 msgstr "Слайдер"
 
