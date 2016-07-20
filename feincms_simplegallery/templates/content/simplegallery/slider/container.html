@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="row row-height">
 		<div class="col-xs-12">
-			<div id="slick-slider-{{container_id}}" class="slick slick-slider">
+			<div id="slick-slider-{{container_id}}" class="slick slick-slider slick-outwards">
 			{% for element in elements %}
 			{% with image=element.mediafile.file|thumbnail:"99999x600" %}
 				<div class="">
