@@ -9,7 +9,7 @@
 			{% with image=element.mediafile.file|thumbnail:container.thumbnail_size %}
 				<div class="">
 				{% if element.get_absolute_url %}
-					<a href="{{element.get_absolute_url}}" target="blank">
+				<a href="{{element.get_absolute_url}}" {% if container.target_blank %}target="blank"{% endif %}>
 						<img class="img-responsive inline-block-important partner-image" 
 							src="{{image}}">
 					</a>

@@ -5,9 +5,9 @@
 # Alexander Paramonov <alex@paramono.com>, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.2.0\n"
+"Project-Id-Version: 0.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-01 00:56+0300\n"
+"POT-Creation-Date: 2016-09-01 01:14+0300\n"
 "PO-Revision-Date: 2016-04-02 18:20+0300\n"
 "Last-Translator: Alexander Paramonov <alex@paramono.com>\n"
 "Language-Team: Russian <https://github.com/paramono/feincms_simplegallery>\n"
@@ -44,71 +44,75 @@ msgid "Progressive"
 msgstr "Наперёд"
 
 #: content_types/slider.py:23
+msgid "Open gallery links new tab?"
+msgstr "Открывать галерейные ссылки в новой вкладке?"
+
+#: content_types/slider.py:28
 msgid "Hide on small screens?"
 msgstr "Прятать на малых экранах?"
 
-#: content_types/slider.py:28
+#: content_types/slider.py:33
 msgid "Navigation dots"
 msgstr "Навигационные буллеты"
 
-#: content_types/slider.py:32
+#: content_types/slider.py:37
 msgid "Infinite"
 msgstr "Зациклить"
 
-#: content_types/slider.py:33
+#: content_types/slider.py:38
 msgid "Shows first slide after the last one and vice versa"
 msgstr "Показывает первый слайд после последнего и наоборот"
 
-#: content_types/slider.py:37
+#: content_types/slider.py:42
 msgid "Autoplay"
 msgstr "Автопролистывание"
 
-#: content_types/slider.py:41
+#: content_types/slider.py:46
 msgid "Adaptive Height"
 msgstr "Адаптивная высота"
 
-#: content_types/slider.py:42
+#: content_types/slider.py:47
 msgid "Adapts slider height to the current slide"
 msgstr "Подгоняет высоту слайдера под высоту текущего слайда"
 
-#: content_types/slider.py:46
+#: content_types/slider.py:51
 msgid "Mobile First"
 msgstr "Mobile First"
 
-#: content_types/slider.py:47
+#: content_types/slider.py:52
 msgid "Responsive settings use mobile first calculation"
 msgstr "Адаптивная вёрстка отсчитывается по принципу mobile first"
 
-#: content_types/slider.py:51
+#: content_types/slider.py:56
 msgid "Transition speed between slides"
 msgstr "Скорость перехода между слайдами"
 
-#: content_types/slider.py:55
+#: content_types/slider.py:60
 msgid "Autoplay change interval"
 msgstr "Интервал смены слайдов при автопролистывании"
 
-#: content_types/slider.py:59
+#: content_types/slider.py:64
 msgid "Number of slides to show at a time"
 msgstr "Количество одновременно показываемых слайдов"
 
-#: content_types/slider.py:63
+#: content_types/slider.py:68
 msgid "Number of slides to scroll at a time"
 msgstr "Количество одновременно пролистываемых слайдов"
 
-#: content_types/slider.py:70
+#: content_types/slider.py:75
 msgid "Lazy Load"
 msgstr "Ленивая загрузка"
 
-#: content_types/slider.py:71
+#: content_types/slider.py:76
 msgid "Load images only when needed"
 msgstr "Подгружать изображения только по мере надобности"
 
-#: content_types/slider.py:77
+#: content_types/slider.py:82
 msgid "Thumbnail size"
 msgstr "Размер тамбнейла"
 
-#: content_types/slider.py:81 content_types/slider.py:162
-#: content_types/slider.py:163
+#: content_types/slider.py:86 content_types/slider.py:167
+#: content_types/slider.py:168
 msgid "Slider"
 msgstr "Слайдер"
 
