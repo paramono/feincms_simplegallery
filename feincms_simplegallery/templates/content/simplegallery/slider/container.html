@@ -6,7 +6,7 @@
 		<div class="col-xs-12">
 			<div id="slick-slider-{{container_id}}" class="slick slick-slider slick-outwards">
 			{% for element in elements %}
-			{% with image=element.mediafile.file|thumbnail:"99999x600" %}
+			{% with image=element.mediafile.file|thumbnail:container.thumbnail_size %}
 				<div class="">
 				{% if element.get_absolute_url %}
 					<a href="{{element.get_absolute_url}}" target="blank">
@@ -17,6 +17,13 @@
 					<img class="img-responsive inline-block-important partner-image" 
 						src="{{image}}">
 				{% endif %}
+					<h4 class="center">
+						<strong>
+							<a href="{{ element.get_absolute_url }}">
+								{{ element.title }}
+							</a>
+						</strong>
+					</h4>
 				</div>
 			{% endwith %}
 			{% endfor %}
@@ -29,7 +36,7 @@
 
 <script>
 $(document).ready(function() {
-		$('#slick-slider-{{container_id}}').slick(
+	$('#slick-slider-{{container_id}}').slick(
 		{{container.to_json|safe}}
 	);
 });
