@@ -7,9 +7,9 @@
 			<div id="slick-slider-{{container_id}}" class="slick slick-slider slick-outwards">
 			{% for element in elements %}
 			{% with image=element.mediafile.file|thumbnail:container.thumbnail_size %}
-				<div class="">
+				<div class="center">
 				{% if element.get_absolute_url %}
-				<a href="{{element.get_absolute_url}}" {% if container.target_blank %}target="blank"{% endif %}>
+					<a href="{{element.get_absolute_url}}" {% if container.target_blank %}target="blank"{% endif %}>
 						<img class="img-responsive inline-block-important partner-image" 
 							src="{{image}}">
 					</a>
@@ -17,7 +17,7 @@
 					<img class="img-responsive inline-block-important partner-image" 
 						src="{{image}}">
 				{% endif %}
-					<h4 class="center">
+					<h4>
 						<strong>
 							<a href="{{ element.get_absolute_url }}">
 								{{ element.title }}
