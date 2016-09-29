@@ -10,11 +10,11 @@
 				<div class="center">
 				{% if element.get_absolute_url %}
 					<a href="{{element.get_absolute_url}}" {% if container.target_blank %}target="blank"{% endif %}>
-						<img class="img-responsive inline-block-important partner-image" 
+						<img class="img-responsive inline-block-important partner-image slick-reference" 
 							src="{{image}}">
 					</a>
 				{% else %}
-					<img class="img-responsive inline-block-important partner-image" 
+					<img class="img-responsive inline-block-important partner-image slick-reference" 
 						src="{{image}}">
 				{% endif %}
 					<h4>
@@ -36,6 +36,15 @@
 
 <script>
 $(document).ready(function() {
+  $('#slick-slider-{{container_id}}').on("init", function(event, slick){
+    alignSlickArrows();  // from slick-tweaks.js
+  });
+  $('#slick-slider-{{container_id}}').on("reInit", function(event, slick){
+    alignSlickArrows();  // from slick-tweaks.js
+  });
+  $('#slick-slider-{{container_id}}').on("setPosition", function(event, slick){
+    alignSlickArrows();  // from slick-tweaks.js
+  });
 	$('#slick-slider-{{container_id}}').slick(
 		{{container.to_json|safe}}
 	);
