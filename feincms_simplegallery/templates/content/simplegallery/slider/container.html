@@ -17,13 +17,20 @@
 					<img class="img-responsive inline-block-important partner-image slick-reference" 
 						src="{{image}}">
 				{% endif %}
+
+        {% if element.title %}
 					<h4>
 						<strong>
+              {% if element.page or element.url %}
 							<a href="{{ element.get_absolute_url }}">
 								{{ element.title }}
 							</a>
+              {% else %}
+								{{ element.title }}
+              {% endif %}
 						</strong>
 					</h4>
+        {% endif %}
 				</div>
 			{% endwith %}
 			{% endfor %}
