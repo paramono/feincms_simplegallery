@@ -18,7 +18,7 @@ class GalleryContent(models.Model):
     container_type = 'gallery'
 
     container = models.ForeignKey(
-        'GalleryContainer',
+        'feincms_simplegallery.GalleryContainer',
         verbose_name=_('Link to Gallery'),
         related_name='%(app_label)s_%(class)s_related',
         blank=True,
@@ -70,7 +70,6 @@ class GalleryContent(models.Model):
                 'template_dir': template_dir,
                 'template_element': template_element,
             },
-            context_instance=kwargs.get('context')
         )
 
     @property

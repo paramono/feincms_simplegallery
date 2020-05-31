@@ -110,9 +110,11 @@ class SliderContent(GalleryContent):
         # md:  992px [992; 1200-1]
         # lg: 1200px [1200; inf+]
 
-        def slide_decr(x): return max(x-1, 1)
+        def slide_decr(x):
+            return max(x-1, 1)
 
-        def slide_incr(x): return max(x+1, 1)
+        def slide_incr(x):
+            return max(x+1, 1)
 
         def media(breakpoint, slidesToShow=1, slidesToScroll=1, **kwargs):
             settings = {

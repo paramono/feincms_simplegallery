@@ -79,7 +79,7 @@ class GalleryElement(OrderableMixin, models.Model):
         null=True,
     )
     container = models.ForeignKey(
-        'GalleryContainer',
+        'feincms_simplegallery.GalleryContainer',
         verbose_name=_('Gallery'),
         related_name='container_elements',
         blank=True,
@@ -93,7 +93,7 @@ class GalleryElement(OrderableMixin, models.Model):
         limit_choices_to={'type': 'image'},
         blank=True,
         null=True,
-        )
+    )
 
     def __str__(self):
         return self.title
@@ -113,11 +113,9 @@ class GalleryElement(OrderableMixin, models.Model):
                 'elem': self,
                 'elem_id': id(self)
             },
-            context_instance=kwargs.get('context'))
+        )
 
     class Meta:
         ordering = ['_order', 'title']
         verbose_name = _('Gallery Element')
         verbose_name_plural = _('Gallery Elements')
-
-
